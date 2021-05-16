@@ -18,10 +18,6 @@ translation service.
 -  `node-cache` package for caching.
 -  `Jest` to test the APIs.
 
-## Pre-task 
-
-Rename ```config/config.env.env``` to ```config/config.env``` and update the values/settings to your own project.
-
 ## Install Dependencies
 
 ```
