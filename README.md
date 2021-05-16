@@ -38,7 +38,12 @@ npm start
 ```
 
 ## Usage 
-To get the translation, we can Postman or any web browser and hit this API.
+To get the translation, we can Postman or any web browser and hit this API as follow:
+```
+{URL}/translate?sourceText=&targetLanguage=''
+
+# URL: (http://localhost:5000) or Deployed link
+```
 
 We have to pass two `Query Params` with 
 ```
