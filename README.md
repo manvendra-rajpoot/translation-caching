@@ -15,6 +15,7 @@ translation service.
 
 ### Tech stack used
 -  `NodeJS` & `ExpressJS` (a flexible Node.js web application framework) as beckend.
+-  `Google translate` as an external service for actual translation.
 -  `node-cache` package for caching.
 -  `Jest` to test the APIs.
 
