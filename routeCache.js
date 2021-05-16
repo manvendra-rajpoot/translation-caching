@@ -1,5 +1,5 @@
 const NodeCache = require('node-cache');
-const cache = new NodeCache({ stdTTL: 100, checkperiod: 10 });
+const cache = new NodeCache({ stdTTL: 100});
 
 module.exports = duration => (req,res,next) => {
     //if req is not GET
@@ -13,11 +13,11 @@ module.exports = duration => (req,res,next) => {
 
     //if exists, send cache result
     if(cacheResponse) {
-        console.log(`Cache hit for ${key}`.bgGreen.black);
+        console.log('Cache hit for '.brightGreen.bold + `${key}`.green.italic);
         res.send(cacheResponse);
     } else {
         //if not, replace ,send with method to  set response to cache
-        console.log(`Cache miss for ${key}`.bgMagenta.black); 
+        console.log('Cache miss for '.brightMagenta.bold + `${key}`.magenta.italic);
         res.originalSend = res.send;
         res.send = body => {
             res.originalSend(body);
